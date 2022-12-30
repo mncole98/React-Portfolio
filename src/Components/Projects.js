@@ -1,48 +1,134 @@
-import { CodeIcon } from "@heroicons/react/solid";
-import React from "react";
-import { projects } from "../data";
+import React from 'react';
 
-export default function Projects() {
+import PlaceHolderOne from "../../assets/images/placeholder_1_600.jpg";
+import PlaceHolderTwo from "../../assets/images/placeholder_2_600.jpg";
+import PlaceHolderThree from "../../assets/images/placeholder_3_600.jpg";
+import LookUp from "../../assets/images/LookUp-new.png";
+import MakeAppoint from "../../assets/images/make-a-point-app.png";
+import FinalProject from "../../assets/images/Final-Project.jpg";
+
+function Portfolio() {
   return (
-    <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
-          <CodeIcon className="mx-auto inline-block w-10 mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Apps I've Built
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
-          </p>
+    <section class="portfolio">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src={LookUp}
+              alt="lookUp"
+              class="card-img-top"
+            />
+            <div class="card-body">
+
+              <a href="https://github.com/kara-krzystan/lookup-by-ben-kara-kristin" target="_blank" rel="noreferrer">
+                <button>GitHub</button>
+              </a>
+              <a href="https://benmcrae5.github.io/lookup-by-ben-kara-kristin" target="_blank" rel="noreferrer">
+                <button>Website</button>
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-wrap -m-4">
-          {projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4">
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
-                </div>
-              </div>
-            </a>
-          ))}
+
+
+        <div class="col">
+          <div class="card">
+            <img
+              src={MakeAppoint}
+              alt="Make A'Point"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="https://github.com/kara-krzystan/Team-Project-Wk15" target="_blank" rel="noreferrer">
+                <button>GitHub</button>
+              </a>
+              <a href="https://team-project-wk15.herokuapp.com/" target="_blank" rel="noreferrer">
+                <button>Website</button>
+              </a>
+            </div>
+          </div>
         </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src={FinalProject}
+              alt="Final Project"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="https://github.com/kara-krzystan/final-final-v3" target="_blank" rel="noreferrer">
+                <button>GitHub</button>
+              </a>
+              <a href="https://radiant-scrubland-03545.herokuapp.com/" target="_blank" rel="noreferrer">
+                <button>Website</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card">
+            <img
+              src={PlaceHolderOne}
+              alt="Coming Soon"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="https://github.com/kara-krzystan" target="_blank" rel="noreferrer">
+                <button>GitHub</button>
+              </a>
+              <a href="https://github.com/kara-krzystan" target="_blank" rel="noreferrer">
+                <button>Website</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src={PlaceHolderTwo}
+              alt="Coming Soon"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="https://github.com/kara-krzystan" target="_blank" rel="noreferrer">
+                <button>GitHub</button>
+              </a>
+              <a href="https://github.com/kara-krzystan" target="_blank" rel="noreferrer">
+                <button>Website</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img
+              src={PlaceHolderThree}
+              alt="Coming Soon"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="https://github.com/kara-krzystan" target="_blank" rel="noreferrer">
+                <button>GitHub</button>
+              </a>
+              <a href="https://github.com/kara-krzystan" target="_blank" rel="noreferrer">
+                <button>Website</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </section>
+
+
   );
 }
+
+export default Portfolio;
