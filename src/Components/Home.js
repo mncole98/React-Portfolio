@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Portrait from "../../assets/images/profile_pic.jpg";
+
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
       </div>
       <div className="portrait">
         <img
-          src={Portrait}
+          src='src/assets/IMG_1268.JPG'
           alt="self portrait"
         />
       </div>
