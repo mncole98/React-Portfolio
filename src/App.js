@@ -1,33 +1,30 @@
-import React, {Component} from 'react';
-import { HashRouter, Route } from 'react-router-dom';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Resume from "./components/pages/Resume";
+import Footer from "./components/Footer";
+import About from "./components/pages/About";
+import Portfolio from "./components/pages/Portfolio";
+import Contact from "./components/pages/Contact";
 
-import Header from './Components/Header';
-import Home from './Components/Home';
-import About from './Components/About';
-import Contact from './Components/Contact';
-import Projects from './Components/Projects';
-import Footer from './Components/Footer';
-
-class App extends Component {
-  render() {
+function App() {
     return (
-      <HashRouter basename="/">
-        <div className="app">
-          <Header />
-          <main>
-
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/projects" component={Projects} />
-
-          </main>
-          <Footer />
-        </div>
-      </HashRouter>
+        <Router basename="/ReactPortfolio">
+            <div>
+                <Navbar />
+                <Route exact path="/" component={About} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/ReactPortfolio/about" component={About} />
+                <Route exact path="/portfolio" component={Portfolio} />
+                <Route exact path="/ReactPortfolio/portfolio" component={Portfolio} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/ReactPortfolio/contact" component={Contact} />
+                <Route exact path="/resume" component={Resume} />
+                <Route exact path="/ReactPortfolio/resume" component={Resume} />
+                <Footer />
+            </div>
+        </Router>
     );
-  }
 }
 
 export default App;
