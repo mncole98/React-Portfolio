@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Resume from "./components/pages/Resume";
-import Footer from "./components/Footer";
-import About from "./components/pages/About";
-import Portfolio from "./components/pages/Portfolio";
-import Contact from "./components/pages/Contact";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import About from "./Components/pages/About";
+import Portfolio from "./Components/pages/Portfolio";
+import Contact from "./Components/pages/Contact";
 
 function App() {
     return (
@@ -19,8 +18,6 @@ function App() {
                 <Route exact path="/ReactPortfolio/portfolio" component={Portfolio} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/ReactPortfolio/contact" component={Contact} />
-                <Route exact path="/resume" component={Resume} />
-                <Route exact path="/ReactPortfolio/resume" component={Resume} />
                 <Footer />
             </div>
         </Router>
