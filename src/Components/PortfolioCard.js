@@ -17,6 +17,7 @@ function PortfolioCard(props) {
                     <a
                         href={props.github}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="fab fa-github-square"
                         title="Code Repository"
                         
@@ -32,6 +33,7 @@ function PortfolioCard(props) {
                     title={props.description}
                     data-content={props.description}
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     {props.name}
                 </a>

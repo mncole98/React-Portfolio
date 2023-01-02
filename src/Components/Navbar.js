@@ -7,35 +7,9 @@ function Navbar() {
     return (
 <>
         {/* <div className="navcontainer"> */}
-            <nav className="contactBar navbar-fixed-top">
-                <div className="icons">
-                    <ul>
-                        <li className="ml-auto">
-                            <a href="mailto:webmaster@tripp.parham@gmail.com">
-                                <i class="far fa-envelope"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://bit.ly/3baM4M9">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://bit.ly/3cdMQcP">
-                                <i class="fab fa-github-square"></i>
-                            </a>
-                        </li>
-                        <li className="mr-auto">
-                            <a href="https://www.facebook.com/TrippParham">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
             <nav className="navbar navbar-expand-lg header navbar-fixed-top">
             
-                <a className="navbar-brand" href="/about">Tripp Parham</a>
+                <a className="navbar-brand" href="/about">Matt Cole</a>
                 <button className="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon">
                         <span className="dark-blue-text">
@@ -59,14 +33,6 @@ function Navbar() {
                                     window.location.pathname === "/portfolio" ? "nav-link active" : "nav-link"
                             }>
                                 Projects
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/resume"
-                                className={
-                                    window.location.pathname === "/resume" ? "nav-link active" : "nav-link"
-                            }>
-                                Resume
                             </Link>
                         </li>
                         <li className="nav-item">

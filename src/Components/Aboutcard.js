@@ -1,6 +1,5 @@
 import React from "react";
-import Profile from "../assets/tripp.jpeg";
-import { Link } from "react-router-dom";
+import Profile from "../assets/matt.jpeg"
 
 function AboutCard() {
     return (
@@ -8,7 +7,7 @@ function AboutCard() {
             <h1 className="title">About Me</h1>
 
             <img
-                src={Profile}
+                src={ Profile }
                 alt="profile"
                 className="profile float-left"
             ></img>

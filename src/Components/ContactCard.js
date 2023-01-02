@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "src/assets/Profile.JPG";
+
 
 function ContactCard(props) {
     return (
@@ -13,7 +13,7 @@ function ContactCard(props) {
                         <li>
                         <h1>Email</h1>
                             <a
-                                href="mailto:webmaster@tripp.parham@gmail.com"
+                                href="mailto:webmaster@mncole98@gmail.com"
                                 className="ml-4 mt-4 font-weight-bold"
                             >
                                 <h2>mncole98@gmail.com</h2>
@@ -22,7 +22,7 @@ function ContactCard(props) {
                         <li>
                         <h1>LinkedIn</h1>
                             <a
-                                href="https://bit.ly/3baM4M9​"
+                                href="https://www.linkedin.com/in/matthew-cole-6652071bb​"
                                 className="ml-4 mt-4 font-weight-bold"
                             >
                                 <h2>View Profile</h2>
@@ -34,7 +34,7 @@ function ContactCard(props) {
                                 href="https://github.com/mncole98"
                                 className="ml-4 mt-4 font-weight-bold"
                             >
-                                ​<h2>https://bit.ly/3cdMQcP</h2>
+                                ​<h2>View Profile</h2>
                             </a>
                         </li>
                     </ul>
