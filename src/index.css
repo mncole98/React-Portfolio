@@ -1,6 +1,6 @@
 body {
     /* background-image: ; The image used */
-    background-color: white !important; /* Used if the image is unavailable */
+    background-color: #B0DAF1 !important; /* Used if the image is unavailable */
     min-height: 1300px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -96,7 +96,7 @@ hr {
 }
 
 .card {
-    background: #fff;
+    background: #B0DAF1;
     border-radius: 2px;
     overflow: hidden;
     margin: 2rem;
@@ -250,7 +250,7 @@ button:focus{
     margin-top: 40px;
     text-align: center;
     color:white;
-    background-color: rgba(122, 107, 67, 0.8);
+    background-color: #F06543(122, 107, 67, 0.8);
     /* width:40%; */
     border-radius: 25px;
     padding: 10px;
@@ -261,7 +261,7 @@ button:focus{
 .container {
     margin-left: 25%;
     border: 1px white solid;
-    background-color: white;
+    background-color: #B0DAF1;
     width: 50%;
 }
 
@@ -347,7 +347,7 @@ button:focus{
 
 .about-container {
     border: 1px white solid;
-    background-color: white;
+    background-color: #B0DAF1;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -367,7 +367,7 @@ button:focus{
     margin-top: 0px;
     text-align: center;
     color:white;
-    background-color: #7f9288;
+    background-color: #83C5BE;
     /* width:300px; */
     border-radius: 25px;
     padding: 10px;
@@ -406,7 +406,7 @@ button:focus{
     margin-right: auto;
     margin-bottom: 20px;
     color: white;
-    background-color: #8b5b37;
+    background-color: #F06543;
     border: 1px solid black;
     border-radius: 15px;
     padding: 10px;
