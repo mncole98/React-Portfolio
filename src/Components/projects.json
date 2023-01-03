@@ -12,7 +12,7 @@
     {
         "id": 2,
         "name": "Smoke Signal - Fire Emergency Locator",
-        "image": "/Users/matthewcole/Desktop/React-Portfolio/src/assets/Screenshot 2022-12-31 at 9.32.43 AM.png",
+        "image": "public/images/smokesignal.png",
         "project": "A fire and emergency locator.",
         "location": "https://jleebootcamp.github.io/smokesignal/",
         "description": "An app where users can search the latest data of recent fire incidents in Seattle using the Google Maps API and the Seattle Real Time Fire Data API.",
