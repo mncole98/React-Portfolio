@@ -13,7 +13,7 @@ function AboutCard() {
             ></img>
             <div>
                 <div className="mt-4 aboutText">
-                    <p>I am a recent graduate of the Trilogy Bootcamp hosted by University oof washington. I have advanced skills in multiple areas of Web Development.
+                    <p>I am a recent graduate of the Trilogy Bootcamp hosted by University of washington. I have advanced skills in multiple areas of Web Development.
                     </p>
                 </div>
             </div>
